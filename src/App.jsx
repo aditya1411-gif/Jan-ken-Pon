@@ -51,45 +51,20 @@ function App() {
     setMove(0)
   }
 
-  // if(userWins==3){
-  //   setTimeout(()=>{
-  //     setuserWins(0)
-  //     setcomputerWins(0)
-  //     setTie(0)
-  //     alert("You Won!!")
-  //   },200)
-  // }else if(computerWins===3){
-  //   setTimeout(()=>{
-  //     setuserWins(0)
-  //     setcomputerWins(0)
-  //     setTie(0)
-  //     alert("You Lost!!")
-  //   },200)
-  // }
-
-  if(move===5){
+  if(move===3){
     if(userWins>computerWins){
       setTimeout(()=>{
-        setuserWins(0)
-        setcomputerWins(0)
-        setTie(0)
-        setMove(0)
+        handleReset()
         alert("You Won!!")
       },200)
     }else if(userWins==computerWins){
       setTimeout(()=>{
-        setuserWins(0)
-        setcomputerWins(0)
-        setTie(0)
-        setMove(0)
+        handleReset()
         alert("Game Tied!!")
       },200)
     }else{
       setTimeout(()=>{
-        setuserWins(0)
-        setcomputerWins(0)
-        setTie(0)
-        setMove(0)
+        handleReset()
         alert("You Lost!!")
       },200)
     }
